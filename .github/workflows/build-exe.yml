@@ -38,7 +38,7 @@ jobs:
 
       - name: Build EXE with PyInstaller
         run: |
-          pyinstaller --onefile --noconsole --name "HLST_GUI" HogwartsLegacy_SaveTools.pyw
+          pyinstaller --onefile --noconsole --name "HLST_GUI" HLST_GUI.pyw
 
       - name: Create/Publish Release with EXE
         uses: softprops/action-gh-release@v2

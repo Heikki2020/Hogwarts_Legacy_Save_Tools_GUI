@@ -20,6 +20,13 @@ DECOMPRESS_COLOR = "#558FAA"
 EDITOR_COLOR     = "#71A2B8"
 COMPRESS_COLOR   = "#8EB4C7"
 
+def get_resource_path(relative_path):
+    if getattr(sys, 'frozen', False):
+        base_path = sys.executable
+    else:
+        base_path = __file__
+    return os.path.join(os.path.dirname(os.path.abspath(base_path)), relative_path)
+
 class App(ctk.CTk):
     def __init__(self):
         super().__init__()
@@ -113,7 +120,7 @@ class App(ctk.CTk):
         self.log(f"Creating {sav}")
 
     def launch_editor(self):
-        html = os.path.join(os.path.dirname(__file__), "hlse.html")
+        html = get_resource_path("hlse.html")
         if os.path.isfile(html):
             self.log("Opening editor")
             webbrowser.open(f"file://{os.path.abspath(html)}")

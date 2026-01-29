@@ -17,24 +17,24 @@ The HLSE is 1.7.2 by default. If you prefer the old version (1.7.1), you could m
 ## THE BUTTONS
 
 GO TO SAVED GAMES
-- This will open "C:\Users\YOUR_USERNAME\AppData\Local\Hogwarts Legacy\Saved\SaveGames" in Windows File Explorer.
+- This will open **C:\Users\YOUR_USERNAME\AppData\Local\Hogwarts Legacy\Saved\SaveGames** in Windows File Explorer.
 
 RENAME
 - This will rename YOUR_SAVE.sav to YOUR_SAVE.orig.
 
 DECOMPRESS
-- This will launch CMD and run "hlsaves.exe -d YOUR_SAVE.orig YOUR_SAVE.decomp".
+- This will launch CMD and run `hlsaves.exe -d YOUR_SAVE.orig YOUR_SAVE.decomp`.
 
 LAUNCH THE EDITOR
 - This will launch Hogwarts Legacy Save Game Editor in your default browser.
 - When you finish editing in the browser, you still need to manually download the save file and rename it to YOUR_SAVE.edited.
 
 LAUNCH LEGILIMENS
-- This will ask you for YOUR_SAVE.decomp, and then launch CMD and run "Legilimens.exe YOUR_SAVE.decomp --filters ALL -o output.txt".
+- This will ask you for YOUR_SAVE.decomp, and then launch CMD and run `Legilimens.exe YOUR_SAVE.decomp --filters ALL -o output.txt`.
 - This will write the output to a file named "output.txt" in the same folder.
 
 COMPRESS
-- This will launch CMD again and run "hlsaves.exe -c YOUR_SAVE.edited YOUR_SAVE.sav".
+- This will launch CMD again and run `hlsaves.exe -c YOUR_SAVE.edited YOUR_SAVE.sav`.
 
 For more information, check out the page of *Hogwarts Legacy Save Game Editor*, *Hogwarts Legacy Save Tool*, or *Legilimens - The Hogwarts Legacy Collectible Finder*.
 

@@ -36,14 +36,14 @@ LAUNCH LEGILIMENS
 COMPRESS
 - This will launch CMD again and run "hlsaves.exe -c YOUR_SAVE.edited YOUR_SAVE.sav".
 
-For more information, check out the page of Hogwarts Legacy Save Game Editor, Hogwarts Legacy Save Tool, or Legilimens - The Hogwarts Legacy Collectible Finder.
+For more information, check out the page of *Hogwarts Legacy Save Game Editor*, *Hogwarts Legacy Save Tool*, or *Legilimens - The Hogwarts Legacy Collectible Finder*.
 
 All dependencies are included with permission.
 
-- Hogwarts Legacy Save Game Editor,
-- Hogwarts Legacy Save Tool,
-- Legilimens - The Hogwarts Legacy Collectible Finder,
-- oo2core_9_win64.dll.
+- [Hogwarts Legacy Save Game Editor](https://www.nexusmods.com/hogwartslegacy/mods/77),
+- [Hogwarts Legacy Save Tool](https://github.com/topche-katt/hlsavetool),
+- [Legilimens - The Hogwarts Legacy Collectible Finder](https://github.com/Malin001/Legilimens-Hogwarts-Legacy-cpp),
+- [oo2core_9_win64.dll](https://github.com/WorkingRobot/OodleUE/blob/main/Engine/Source/Programs/Shared/EpicGames.Oodle/Sdk/2.9.10/win/redist/oo2core_9_win64.dll).
 
 ## UPDATES
  

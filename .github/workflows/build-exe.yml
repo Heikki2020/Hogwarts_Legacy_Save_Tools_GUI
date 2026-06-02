@@ -30,6 +30,7 @@ jobs:
           pip install PyQt6 pyinstaller
 
       - name: GitHub Tagging
+        id: tag
         uses: nickkostov/github-tag-action@v1.3.0
 
       - name: Build EXE with PyInstaller

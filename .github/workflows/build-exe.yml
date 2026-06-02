@@ -15,12 +15,12 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6.0.2
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0       # Needed for tagging properly
 
       - name: Set up Python 3.14
-        uses: actions/setup-python@v6.2.0
+        uses: actions/setup-python@v5
         with:
           python-version: '3.14'
 
@@ -29,16 +29,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install PyQt6 pyinstaller
 
-      - name: GitHub Tagging
+      - name: Auto bump tag (semver style)
         id: tag
         uses: nickkostov/github-tag-action@v1.3.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          default_bump: patch   # Or 'minor' / 'major' – change as needed
 
       - name: Build EXE with PyInstaller
         run: |
           pyinstaller --onefile --noconsole --name "HLST_GUI" HLST_GUI.pyw
 
       - name: Create/Publish Release with EXE
-        uses: softprops/action-gh-release@v3.0.0
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ steps.tag.outputs.new_tag }}
           name: Release ${{ steps.tag.outputs.new_tag }}

@@ -12,7 +12,9 @@ Keep all the files in the same folder as shown in the screenshot, and double-cli
 
 To make Legilimens work, there should be **only Latin characters and numbers** in the full path of the folder you create. For example, **D:\HL999**.
 
-The HLSE is 1.7.2 by default. If you prefer the old version (1.7.1), you could manually rename "hlse-1.7.1-ALPHA.html" to "hlse.html".
+The HLSE is 1.7.2 by default.
+- If you prefer the old version (1.7.1), you could manually rename "hlse-1.7.1-ALPHA.html" to "hlse.html".
+- If you prefer a newer version (1.0.4) by Hawk-on from GitHub, you could manually rename "HLSGE-1.0.4-Hawk-on.html" to "hlse.html".
 
 ## THE BUTTONS
 
@@ -55,3 +57,10 @@ V2.1 - 2026-1-3
 
 V2.2 - 2026-1-19
 - Bug fixes and a new button.
+
+V2.3 - 2026-6-2
+- Updated oo2core_9_win64.dll to 2.9.15;
+- Updated hlsaves.exe to 2.0.1;
+- Added HLSGE 1.0.4 by Hawk-on from GitHub;
+- Switched to Qt6 for better readability;
+- Other small bug fixes.
